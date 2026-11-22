@@ -15,6 +15,9 @@ index.html          홈 (한국어): 소개 · 앱 · 사업자 정보 · 문의
 en/index.html       홈 (영어)
 privacy/index.html  개인정보처리방침 (한국어 #ko + 영어 #en), 모든 앱 공통
 404.html
+memokan/index.html          메모칸 소개 (한국어), en/memokan/index.html (영어)
+memokan/privacy/index.html  메모칸 개인정보처리방침 (한국어 #ko + 영어 #en)
+assets/css/memokan.css, assets/img/memokan-icon.png
 assets/css/style.css
 assets/img/favicon.svg
 ```
@@ -30,7 +33,8 @@ assets/img/favicon.svg
 
 ## 남은 일
 - [ ] AdMob 계정 생성 후 `app-ads.txt` 추가 (`google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0`)
-- [ ] 첫 앱 출시 시 홈 "앱" 영역과 방침 9번 "앱별 처리 내용" 채우기
+- [x] 홈 "앱" 영역과 방침 9번에 메모칸 추가 (2026-11-22)
+- [ ] 메모칸이 스토어에 나오면 memokan/ 과 홈 카드의 "출시 예정"을 다운로드 링크로 바꾸기
 - [ ] Play Console 개발자 웹사이트 칸에 이 사이트 주소 입력
 
 ## 사업자 정보 (D-U-N-S 신청값과 글자 하나까지 동일하게 유지)
