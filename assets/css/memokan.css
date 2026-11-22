@@ -1,0 +1,59 @@
+/* 메모칸 소개 페이지 */
+.mk { --em: #2f9580; --em-d: #1f6f5f; --em-soft: #dff1ec; --cream: #f6ecd9; --cream-2: #fbf5e9; --coral: #f2a7a0; background: var(--cream-2); }
+.mk-hero { background: radial-gradient(900px 420px at 80% 0%, #fdf8ee 0%, transparent 65%), linear-gradient(180deg, var(--cream) 0%, var(--cream-2) 100%); padding: 72px 0 64px; overflow: hidden; }
+.mk-hero .wrap { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
+.mk-app { display: flex; align-items: center; gap: 16px; margin-bottom: 26px; }
+.mk-app img { width: 76px; height: 76px; border-radius: 18px; box-shadow: 0 10px 28px rgba(31, 111, 95, 0.22); }
+.mk-app b { display: block; font-size: 22px; letter-spacing: -0.02em; }
+.mk-app span { color: var(--muted); font-size: 14px; }
+.mk-hero h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.22; letter-spacing: -0.03em; margin: 0 0 18px; }
+.mk-hero h1 em { font-style: normal; color: var(--em); }
+.mk-hero p.lead { font-size: 18px; color: #4b5263; margin: 0 0 28px; max-width: 520px; }
+.mk-cta { display: flex; flex-wrap: wrap; gap: 10px; }
+.mk-pill { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 999px; font-weight: 700; font-size: 15px; text-decoration: none; }
+.mk-pill.on { background: var(--em-d); color: #fff; }
+.mk-pill.off { background: #fff; color: var(--muted); border: 1px solid #e6dcc6; }
+.mk-pill i { width: 8px; height: 8px; border-radius: 50%; background: #ffd66b; display: inline-block; }
+.mk-note { font-size: 13.5px; color: var(--muted); margin: 14px 0 0; }
+
+/* 화면 예시 */
+.mk-phone { justify-self: center; width: 290px; background: #fff; border: 9px solid #23302c; border-radius: 42px; padding: 22px 16px 18px; box-shadow: 0 30px 60px rgba(31, 60, 52, 0.22); transform: rotate(2deg); }
+.mk-phone .day { font-size: 12px; color: #9aa0ac; }
+.mk-phone .hello { font-size: 20px; font-weight: 800; letter-spacing: -0.02em; margin: 2px 0 14px; }
+.mk-row { display: flex; align-items: center; gap: 12px; padding: 9px 0; }
+.mk-row .ic { flex: none; width: 40px; height: 40px; border-radius: 12px; background: var(--em-soft); display: grid; place-items: center; font-size: 19px; }
+.mk-row b { display: block; font-size: 14.5px; line-height: 1.3; }
+.mk-row span { display: block; font-size: 11.5px; color: #8a909c; line-height: 1.4; }
+
+.mk section { padding: 64px 0; }
+.mk section + section { border-top: 1px solid #ece2cd; }
+.mk-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.mk-card { background: #fff; border: 1px solid #ece2cd; border-radius: 18px; padding: 24px; }
+.mk-card .ic { width: 44px; height: 44px; border-radius: 14px; background: var(--em-soft); display: grid; place-items: center; font-size: 22px; margin-bottom: 14px; }
+.mk-card h3 { margin: 0 0 6px; font-size: 17.5px; letter-spacing: -0.01em; }
+.mk-card p { margin: 0; color: var(--muted); font-size: 14.5px; }
+
+.mk-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; counter-reset: s; }
+.mk-step { background: var(--em-d); color: #fff; border-radius: 18px; padding: 26px; }
+.mk-step:nth-child(2) { background: #2a8472; } .mk-step:nth-child(3) { background: var(--em); }
+.mk-step small { opacity: 0.75; font-weight: 700; letter-spacing: 0.1em; font-size: 12px; }
+.mk-step h3 { margin: 6px 0 6px; font-size: 19px; }
+.mk-step p { margin: 0; font-size: 14.5px; opacity: 0.9; }
+
+.mk-priv { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.mk-priv .mk-card b { color: var(--em-d); }
+.mk-plan { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #ece2cd; border-radius: 18px; overflow: hidden; }
+.mk-plan th, .mk-plan td { text-align: left; padding: 14px 20px; border-bottom: 1px solid #f0e8d6; font-size: 15px; vertical-align: top; }
+.mk-plan tr:last-child th, .mk-plan tr:last-child td { border-bottom: 0; }
+.mk-plan th { width: 200px; color: var(--em-d); background: #fdfaf3; }
+.mk-info { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.mk-info span { background: #fff; border: 1px solid #ece2cd; border-radius: 999px; padding: 7px 16px; font-size: 14px; color: #4b5263; }
+.mk-links { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+.mk .btn { background: var(--em-d); } .mk .btn:hover { background: var(--em); }
+
+@media (max-width: 860px) {
+  .mk-hero .wrap { grid-template-columns: 1fr; }
+  .mk-grid, .mk-steps, .mk-priv { grid-template-columns: 1fr; }
+  .mk-phone { transform: none; }
+  .mk-plan th { width: 120px; }
+}

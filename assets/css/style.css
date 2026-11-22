@@ -119,3 +119,16 @@ section + section { border-top: 1px solid var(--line); }
   .info th { width: 120px; }
   .hero::after { width: 160px; height: 160px; right: -50px; top: 20px; }
 }
+
+/* app card (home) */
+.app-card { display: flex; align-items: center; gap: 24px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; text-decoration: none; transition: transform .15s ease, box-shadow .15s ease; }
+.app-card:hover { transform: translateY(-2px); box-shadow: 0 14px 34px rgba(20, 27, 51, 0.10); }
+.app-card img { flex: none; width: 96px; height: 96px; border-radius: 22px; }
+.app-card h3 { margin: 0 0 4px; font-size: 21px; letter-spacing: -0.01em; }
+.app-card h3 small { font-weight: 600; color: var(--muted); font-size: 14px; margin-left: 6px; }
+.app-card p { margin: 0 0 10px; color: var(--muted); font-size: 15px; }
+.app-card .tags { display: flex; flex-wrap: wrap; gap: 8px; font-size: 13px; }
+.app-card .tags span { background: var(--moon-soft); color: #7a5410; border-radius: 999px; padding: 3px 12px; font-weight: 700; }
+.app-card .tags span.plain { background: #f1f2f6; color: var(--muted); font-weight: 600; }
+.app-card .go { margin-left: auto; font-weight: 700; white-space: nowrap; }
+@media (max-width: 760px) { .app-card { flex-wrap: wrap; } .app-card .go { margin-left: 0; } }
