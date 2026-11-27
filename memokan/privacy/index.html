@@ -43,22 +43,38 @@
 
 <h1 id="ko">메모칸 개인정보처리방침</h1>
 <p class="muted">
-  최종 수정일: 2026년 11월 22일 · 시행일: 2026년 11월 22일<br>
+  최종 수정일: 2026년 11월 28일 · 시행일: 2026년 11월 28일<br>
   앱 이름: 메모칸 (Memokan) · 번들 ID / 패키지명: <code>com.dalseongsoft.mynote</code> · 개발자: 달성소프트
 </p>
 
 <div class="box">
   <strong>요약</strong><br>
   메모칸은 <strong>이용자의 메모·할 일·일정·사진·녹음을 수집하지 않습니다.</strong> 모든 기록은 이용자의
-  기기 안에만 저장되며, 개발자는 그 내용을 볼 수 없습니다. 메모칸에는 회원가입도, 로그인도,
-  개발자가 운영하는 서버도 없습니다. 다만 이용자가 직접 고른 보상형 광고는 구글(AdMob)이 제공하고,
+  기기 안에만 저장되며, 개발자는 그 내용을 볼 수 없습니다. 메모칸에는 회원가입도 로그인도 없습니다.
+  <strong>하루칸 혜택 확인과 구매 확인을 위해서만</strong> 달성소프트가 운영하는 서버와 통신하며, 이때 보내고 남는 것은
+  1번에 적었습니다(기록 내용은 보내지 않습니다). 이용자가 직접 고른 보상형 광고는 구글(AdMob)이 제공하고,
   구독·구매 결제는 Apple App Store 또는 Google Play 가 처리합니다.
 </div>
 
-<h2>1. 개발자가 수집하는 개인정보</h2>
-<p><strong>없습니다.</strong> 메모칸은 이름·연락처·이메일처럼 이용자를 알아볼 수 있는 정보를 수집하지 않습니다.
+<h2>1. 개발자가 수집하는 정보</h2>
+<p>메모칸은 이름·연락처·이메일처럼 이용자를 알아볼 수 있는 정보를 수집하지 않습니다.
 개발자는 이용자가 쓴 메모, 할 일, 알람, 일정, 사진, 녹음, 설정값을 어떤 형태로도 전달받지 않습니다.
 사용 통계(분석 도구)도 넣지 않았습니다.</p>
+<p>다만 아래 두 기능은 달성소프트가 운영하는 확인 서버(Supabase 에 둔 서버)와 통신합니다.</p>
+<table>
+  <tr><th>기능</th><th>서버로 보내는 것</th><th>서버에 남는 것</th></tr>
+  <tr><td>하루칸 혜택 확인<br>(하루칸 이용자에게 메모칸을 열어 주는 혜택 코드를 넣었을 때와, 그 뒤 앱을 켤 때)</td>
+      <td>혜택 코드, 앱이 처음 쓸 때 무작위로 만든 기기 번호(기기 고유 번호나 광고 ID 가 아닙니다)</td>
+      <td>코드에 연결된 기기 번호(코드 하나에 최대 2대), 처음 쓴 시각, 확인한 시각과 결과</td></tr>
+  <tr><td>구매 확인<br>(안드로이드에서 메모칸 구독·평생 이용권을 샀을 때, 가짜 결제를 막기 위해)</td>
+      <td>상품 이름, Google Play 구매 토큰</td>
+      <td>남기지 않습니다. 서버는 Google Play 에 그 구매가 맞는지 묻고 결과만 앱에 돌려줍니다.</td></tr>
+</table>
+<p>하루칸 앱의 「메모칸 받기」로 메모칸을 설치하면, 처음 켤 때 Google Play 설치 정보에서 혜택 코드를 읽어 자동으로 넣습니다.
+혜택 코드를 쓰지 않으면 혜택 확인 통신은 일어나지 않습니다.
+이 정보는 혜택과 구매를 확인하는 데에만 쓰고, 광고 등 다른 목적에 쓰거나 다른 회사에 넘기지 않습니다.
+혜택 확인에 필요한 동안 보관하며, 지우기를 원하면 혜택 코드를 적어 아래 문의 메일로 보내 주세요.
+서버와 주고받는 내용은 암호화된 연결(HTTPS)로 전송됩니다.</p>
 
 <h2>2. 기기 안에만 저장되는 정보</h2>
 <table>
@@ -66,7 +82,7 @@
   <tr><td>메모·메모장·책장, 할 일, 알람, 마인드맵</td><td>화면 표시, 검색, 기기 내 알림</td></tr>
   <tr><td>이용자가 고르거나 찍은 사진, 스캔한 문서</td><td>메모에 첨부</td></tr>
   <tr><td>녹음 파일과 받아쓴 글</td><td>메모에 첨부</td></tr>
-  <tr><td>앱 설정(테마, 글꼴, 언어 등), 잉크 개수, 체험·구독 상태</td><td>화면 구성, 기능 열기</td></tr>
+  <tr><td>앱 설정(테마, 글꼴, 언어 등), 잉크 개수, 체험·구독·하루칸 혜택 상태</td><td>화면 구성, 기능 열기</td></tr>
 </table>
 <p>앱을 삭제하면 위 정보는 기기에서 함께 삭제됩니다. 이용자가 직접 내보내기·공유를 실행한 경우에만 이용자가 고른 곳으로 나갑니다.</p>
 
@@ -96,14 +112,15 @@
 이 처리는 구글의 광고 SDK 가 수행하며, 개발자는 그 정보를 따로 받거나 보관하지 않습니다.
 자세한 내용: <a href="https://policies.google.com/technologies/partner-sites">Google 이 정보를 사용하는 방법</a></p>
 <h3>4-2. 결제 (Apple App Store · Google Play)</h3>
-<p>구독(1개월·1년)과 평생 이용권 결제는 Apple 또는 Google 이 처리합니다. 개발자는 카드 번호 등 결제 정보를 받지 않으며,
-앱은 구매 여부만 스토어에서 확인합니다.</p>
+<p>구독(1개월·1년)과 평생 이용권 결제는 Apple 또는 Google 이 처리합니다. 개발자는 카드 번호 등 결제 정보를 받지 않습니다.
+앱은 구매 여부를 스토어에서 확인하고, 안드로이드에서는 1번의 구매 확인을 한 번 더 거칩니다.</p>
 
 <h2>5. 아동의 개인정보</h2>
 <p>메모칸은 아동을 대상으로 하지 않으며, 아동의 개인정보를 알면서 수집하지 않습니다.</p>
 
 <h2>6. 이용자의 권리</h2>
-<p>개발자는 이용자의 개인정보를 보관하지 않으므로 열람·정정·삭제할 대상이 없습니다. 기기 안의 기록은 앱 안에서 지우거나 앱을 삭제해 지울 수 있습니다.
+<p>개발자가 보관하는 것은 1번의 하루칸 혜택 기기 번호와 확인 기록뿐입니다. 열람이나 삭제를 원하면 혜택 코드를 적어 문의 메일로 보내 주세요.
+기기 안의 기록은 앱 안에서 지우거나 앱을 삭제해 지울 수 있습니다.
 구글이 처리하는 광고 관련 정보는 기기의 광고 설정과 구글 계정 설정에서 관리할 수 있습니다.</p>
 
 <h2>7. 방침의 변경</h2>
@@ -116,21 +133,37 @@
 
 <h1 id="en">Memokan Privacy Policy</h1>
 <p class="muted">
-  Last updated: November 22, 2026 · Effective: November 22, 2026<br>
+  Last updated: November 28, 2026 · Effective: November 28, 2026<br>
   App: Memokan (메모칸) · Bundle ID / package: <code>com.dalseongsoft.mynote</code> · Developer: Dalseongsoft
 </p>
 
 <div class="box">
   <strong>Summary</strong><br>
   Memokan <strong>does not collect your notes, to-dos, events, photos, or recordings.</strong> Everything you create
-  is stored only on your device, and the developer cannot see it. There is no sign-up, no login, and no server run by the developer.
-  Rewarded ads that you choose to watch are provided by Google (AdMob), and subscriptions and purchases are processed by the
+  is stored only on your device, and the developer cannot see it. There is no sign-up and no login.
+  The app talks to a server run by Dalseongsoft <strong>only to verify Harukan perks and purchases</strong>; what is sent and kept is listed in section 1
+  (your content is never sent). Rewarded ads that you choose to watch are provided by Google (AdMob), and subscriptions and purchases are processed by the
   Apple App Store or Google Play.
 </div>
 
-<h2>1. Personal data collected by the developer</h2>
-<p><strong>None.</strong> Memokan does not collect information that identifies you, such as your name, contact details, or email.
+<h2>1. Data collected by the developer</h2>
+<p>Memokan does not collect information that identifies you, such as your name, contact details, or email.
 The developer never receives your notes, to-dos, alarms, events, photos, recordings, or settings. The app contains no analytics tools.</p>
+<p>Two features, however, talk to a verification server run by Dalseongsoft (hosted on Supabase).</p>
+<table>
+  <tr><th>Feature</th><th>Sent to the server</th><th>Kept on the server</th></tr>
+  <tr><td>Harukan perk check<br>(when you enter a perk code that unlocks Memokan for Harukan users, and when you open the app afterwards)</td>
+      <td>The perk code and a random device ID the app creates on first use (not a hardware ID or advertising ID)</td>
+      <td>The device IDs linked to the code (up to 2 per code), when the code was first used, and when it was checked and the result</td></tr>
+  <tr><td>Purchase check<br>(on Android, when you buy a Memokan subscription or lifetime pass, to block fake payments)</td>
+      <td>The product name and the Google Play purchase token</td>
+      <td>Nothing. The server asks Google Play whether the purchase is valid and only returns the answer to the app.</td></tr>
+</table>
+<p>If you install Memokan from "Get Memokan" in the Harukan app, the perk code is read from the Google Play install information and entered automatically the first time you open the app.
+If you do not use a perk code, no perk check takes place.
+This information is used only to verify perks and purchases. It is not used for ads or any other purpose and is not given to other companies.
+It is kept for as long as it is needed to verify the perk; to have it deleted, email us with your perk code.
+Data exchanged with the server is sent over an encrypted connection (HTTPS).</p>
 
 <h2>2. Information stored only on your device</h2>
 <table>
@@ -138,7 +171,7 @@ The developer never receives your notes, to-dos, alarms, events, photos, recordi
   <tr><td>Notes, notebooks, shelves, to-dos, alarms, mind maps</td><td>Display, search, on-device notifications</td></tr>
   <tr><td>Photos you pick or take, scanned documents</td><td>Attaching to notes</td></tr>
   <tr><td>Audio recordings and transcribed text</td><td>Attaching to notes</td></tr>
-  <tr><td>App settings (theme, font, language), ink count, trial and subscription status</td><td>Layout and unlocking features</td></tr>
+  <tr><td>App settings (theme, font, language), ink count, trial, subscription and Harukan perk status</td><td>Layout and unlocking features</td></tr>
 </table>
 <p>Deleting the app deletes this information from your device. Data leaves the device only when you export or share it yourself, to the destination you choose.</p>
 
@@ -169,13 +202,13 @@ This processing is performed by Google's ads SDK; the developer does not receive
 Details: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information</a></p>
 <h3>4-2. Payments (Apple App Store · Google Play)</h3>
 <p>Subscriptions (monthly, yearly) and the lifetime purchase are processed by Apple or Google. The developer does not receive payment details
-such as card numbers; the app only checks purchase status with the store.</p>
+such as card numbers. The app checks purchase status with the store, and on Android also runs the purchase check described in section 1.</p>
 
 <h2>5. Children's privacy</h2>
 <p>Memokan is not directed at children and does not knowingly collect personal data from children.</p>
 
 <h2>6. Your rights</h2>
-<p>Because the developer holds no personal data about you, there is nothing to access, correct, or delete on our side. You can delete on-device
+<p>The only data the developer keeps is the Harukan perk device IDs and check records in section 1. To access or delete them, email us with your perk code. You can delete on-device
 records inside the app or by deleting the app. Ad-related information processed by Google can be managed in your device's ad settings and your Google account.</p>
 
 <h2>7. Changes to this policy</h2>
